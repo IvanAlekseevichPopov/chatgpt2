@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  python:
+    build: docker
+    command: ["tail", "-f", "/dev/null"]
+    volumes:
+      - ./.src:/src
+
+#volumes:
+#  app:
